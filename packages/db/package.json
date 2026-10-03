@@ -1,0 +1,27 @@
+{
+  "name": "@repo/db",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "contract:emit": "prisma contract emit",
+    "db:init": "prisma db init",
+    "db:update": "prisma db update",
+    "db:migrate": "prisma db migrate",
+    "db:verify": "prisma db verify",
+    "db:plan": "prisma migration plan"
+  },
+  "exports": {
+    ".": "./index.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "@prisma/orm-postgres": "8.0.0-rc.12",
+    "@repo/env": "workspace:*"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@prisma/cli-engine": "0.6.1",
+    "@types/node": "26.4.1",
+    "prisma": "8.0.0-rc.17"
+  }
+}

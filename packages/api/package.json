@@ -1,0 +1,20 @@
+{
+  "name": "@repo/api",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    ".": "./src/app-router.ts",
+    "./context": "./src/context.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "@repo/common": "workspace:*",
+    "@repo/db": "workspace:*",
+    "@trpc/server": "^11.19.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "26.4.1"
+  }
+}

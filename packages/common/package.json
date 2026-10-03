@@ -1,0 +1,19 @@
+{
+  "name": "@repo/common",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./errors": "./src/errors/index.ts",
+    "./logger": "./src/logger.ts",
+    "./schemas/user-schemas": "./src/schemas/user-schemas.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "26.4.1"
+  }
+}
